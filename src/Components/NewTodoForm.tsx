@@ -6,7 +6,7 @@ export interface NewTodoFormProps {
 	setTodoData: (value: any) => void;
 }
 
-const NewTodoForm = ({ setTodoData, todoData }: NewTodoFormProps) => {
+export const NewTodoForm = ({ setTodoData, todoData }: NewTodoFormProps) => {
 	const [rowDescription, setRowDescription] = useState<string>('');
 
 	const [rowAssigned, setRowAssigned] = useState<string>('');
@@ -68,4 +68,3 @@ const NewTodoForm = ({ setTodoData, todoData }: NewTodoFormProps) => {
 		</div>
 	);
 };
-export default NewTodoForm;

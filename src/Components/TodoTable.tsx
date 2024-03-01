@@ -1,4 +1,4 @@
-import TodoRowItem from './TodoRowItem';
+import { TodoRowItem } from './TodoRowItem';
 import { DataProps } from '../App';
 import React from 'react';
 
@@ -7,7 +7,7 @@ export interface TodoTableProps {
 	setTodoData: (value: DataProps[]) => void;
 }
 
-const TodoTable = ({ todoData, setTodoData }: TodoTableProps) => {
+export const TodoTable = ({ todoData, setTodoData }: TodoTableProps) => {
 	const deleteTodo = (deleteRowNumber: number) => {
 		let filterTodoData = todoData.filter(
 			(todo) => todo.rowNumber !== deleteRowNumber
@@ -40,4 +40,3 @@ const TodoTable = ({ todoData, setTodoData }: TodoTableProps) => {
 		</table>
 	);
 };
-export default TodoTable;

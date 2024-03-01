@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import TodoTable from './Components/TodoTable';
-import NewTodoForm from './Components/NewTodoForm';
+import { TodoTable } from './Components/TodoTable';
+import { NewTodoForm } from './Components/NewTodoForm';
 
 export interface DataProps {
 	rowNumber: number;
@@ -8,7 +8,7 @@ export interface DataProps {
 	rowAssigned: string;
 }
 
-const App = () => {
+export const App = () => {
 	const initialTodoData: DataProps[] = [
 		// {
 		//   rowNumber: 1,
@@ -52,5 +52,3 @@ const App = () => {
 		</div>
 	);
 };
-
-export default App;

@@ -7,7 +7,7 @@ export interface TodoRowItemProps {
 	deleteTodo: (rowNumber: number) => void;
 }
 
-const TodoRowItem = ({
+export const TodoRowItem = ({
 	rowNumber,
 	rowDescription,
 	rowAssigned,
@@ -30,4 +30,3 @@ const TodoRowItem = ({
 		</tr>
 	);
 };
-export default TodoRowItem;
